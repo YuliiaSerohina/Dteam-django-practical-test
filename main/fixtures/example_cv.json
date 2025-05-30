@@ -1,0 +1,14 @@
+[
+  {
+    "model": "main.cv",
+    "pk": 1,
+    "fields": {
+      "first_name": "Julia",
+      "last_name": "Serohina",
+      "skills": "Python, Django",
+      "projects": "CRMAplicant, MoneyControl",
+      "bio": "Dreamer",
+      "contacts": "Seregina.j.s@gmail.com.com"
+    }
+  }
+]

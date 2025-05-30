@@ -110,6 +110,9 @@ Thank you!
     poetry env activate
 
 
+#add django prodject
+django-admin startproject CVProject .
+
 # Add app main
 python3 manage.py startapp main
 #Add CVProject/settings.py info about main in INSTALLED_APPS
