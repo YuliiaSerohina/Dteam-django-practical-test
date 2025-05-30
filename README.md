@@ -106,11 +106,9 @@ Thank you!
 
 
 #Install Poetry (macOC)
-command line:
-    curl -sSL https://install.python-poetry.org | python3 -
     poetry install
+    poetry env activate
 
-#Pyenv
 
 # Add app main
 python3 manage.py startapp main
