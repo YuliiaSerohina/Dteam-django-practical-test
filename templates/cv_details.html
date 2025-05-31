@@ -35,7 +35,6 @@
     <div class="container py-5">
         <h1 class="mb-4 text-center text-primary">CV Details</h1>
         <div class="card shadow-lg">
-            {% for cv in cv_get %}
             <div class="card-header">
                 <h3>{{ cv.first_name }} {{ cv.last_name }}</h3>
             </div>
@@ -44,10 +43,13 @@
                 <p><strong>Skills:</strong> {{ cv.skills }}</p>
                 <p><strong>Projects:</strong> {{ cv.projects }}</p>
                 <p><strong>Contacts:</strong> {{ cv.contacts }}</p>
-                <a href="{% url 'main_page' %}" class="btn btn-primary mt-3">Back to List</a>
+                <div class="d-flex justify-content-between mt-4">
+                    <a href="{% url 'main_page' %}" class="btn btn-primary">Back to List</a>
+                    <a href="{% url 'cv_pdf_download' cv.id %}" class="btn btn-primary">Download PDF</a>
+                </div>
+
             </div>
         </div>
-        {% endfor %}
     </div>
 </body>
 </html>

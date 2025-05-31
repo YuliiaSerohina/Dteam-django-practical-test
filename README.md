@@ -132,3 +132,7 @@ python3 manage.py runserver
 
 1.6
 python3 manage.py test
+
+Task2
+pip install xhtml2pdf
+
