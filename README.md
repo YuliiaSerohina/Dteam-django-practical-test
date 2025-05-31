@@ -136,3 +136,6 @@ python3 manage.py test
 Task2
 pip install xhtml2pdf
 
+Task3
+pip install djangorestframework
+

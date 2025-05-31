@@ -27,9 +27,18 @@
             background-color: #0056b3;
             border-color: #0056b3;
         }
+        .api-button-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
     </style>
 </head>
 <body>
+<div class="api-button-container">
+        <a href="{% url 'api_page' %}" class="btn btn-primary">API</a>
+</div>
     <div class="container py-5">
         <h1 class="mb-4 text-center text-primary">CV List</h1>
         <div class="row">
