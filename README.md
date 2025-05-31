@@ -104,24 +104,28 @@ reviewing your submission!
 Thank you!
 
 
-
+Preparation
 #Install Poetry (macOC)
-    poetry install
+    #poetry install
+#Activate virtual env
     poetry env activate
 
+Task 1
 
-#add django prodject
+1.1 Add django prodject
 django-admin startproject CVProject .
 
-# Add app main
+1.2 Add app main
 python3 manage.py startapp main
-#Add CVProject/settings.py info about main in INSTALLED_APPS
-
-
-#Make migrations
+Add CVProject/settings.py info about main in INSTALLED_APPS
+Add model
+Make migrations
 python3 manage.py makemigrations
 python3 manage.py migrate
 
-#Load fixture
+1.3 Add folder Fixtures and json file inside folder
+#Load fixture in sqlite
 python3 manage.py loaddata main/fixtures/example_cv.json
 
+1.4
+python3 manage.py runserver
