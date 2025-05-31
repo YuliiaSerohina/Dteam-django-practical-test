@@ -35,6 +35,7 @@
         <div class="row">
             {% for cv in cv_all_list %}
                 <div class="col-md-4 mb-4">
+                    <a href="{% url 'cv_details' cv.id %}" style="text-decoration: none; color: inherit;">
                     <div class="card shadow-lg">
                         <div class="card-header">
                             <h5 class="card-title">{{ cv.first_name }} {{ cv.last_name }}</h5>
@@ -43,6 +44,7 @@
                             <p><strong>Skills:</strong> {{ cv.skills }}</p>
                         </div>
                     </div>
+                    </a>
                 </div>
             {% endfor %}
         </div>

@@ -129,3 +129,6 @@ python3 manage.py loaddata main/fixtures/example_cv.json
 
 1.4
 python3 manage.py runserver
+
+1.6
+python3 manage.py test
