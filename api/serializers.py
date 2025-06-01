@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import CV
+from main.models import CV
 
 
 class CVSerializer(serializers.ModelSerializer):
