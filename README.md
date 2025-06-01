@@ -138,4 +138,5 @@ pip install xhtml2pdf
 
 Task3
 pip install djangorestframework
+python3 manage.py test api
 
