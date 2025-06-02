@@ -10,7 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
+import os
 from pathlib import Path
+
 
 import api.apps
 import log_app.apps
@@ -29,7 +31,7 @@ SECRET_KEY = 'django-insecure-d_q83)&he1$)2vbgti6t!h$0-8y)w)bkhstl_v0e&66y%lb&jg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -81,11 +83,14 @@ WSGI_APPLICATION = 'CVProject.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Dteamtest_database',
+        'USER': 'myuser',
+        'PASSWORD': 'mysecretpassword',
+        'HOST': 'localhost',
+        'PORT': 5432,
     }
 }
 

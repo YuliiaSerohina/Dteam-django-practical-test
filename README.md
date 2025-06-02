@@ -140,3 +140,7 @@ Task3
 pip install djangorestframework
 python3 manage.py test api
 
+Task6
+pip freeze > requirements.txt
+docker-compose build
+docker-compose up
