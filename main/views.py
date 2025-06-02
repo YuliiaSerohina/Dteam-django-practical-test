@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import CV
+from main.models import CV
 from django.http import HttpResponse
 from django.template.loader import render_to_string
 from xhtml2pdf import pisa
@@ -24,3 +24,7 @@ def cv_pdf_download(request, cv_id):
     if pisa_status.err:
         return HttpResponse('Error', status=500)
     return response
+
+
+def settings_view(request):
+    return render(request, 'settings.html')
