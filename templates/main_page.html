@@ -27,36 +27,47 @@
             background-color: #0056b3;
             border-color: #0056b3;
         }
-        .api-button-container {
+        .btn-info {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+        .btn-info:hover {
+            background-color: #138496;
+            border-color: #117a8b;
+        }
+        .top-buttons-container {
             position: fixed;
             top: 20px;
             right: 20px;
             z-index: 1000;
+            display: flex;
+            gap: 10px;
         }
     </style>
 </head>
 <body>
-<div class="api-button-container">
-        <a href="{% url 'api_page' %}" class="btn btn-primary">API</a>
+<div class="top-buttons-container">
+    <a href="{% url 'api_page' %}" class="btn btn-primary">API</a>
+    <a href="{% url 'logs' %}" class="btn btn-primary">Logs</a>
 </div>
-    <div class="container py-5">
-        <h1 class="mb-4 text-center text-primary">CV List</h1>
-        <div class="row">
-            {% for cv in cv_all_list %}
-                <div class="col-md-4 mb-4">
-                    <a href="{% url 'cv_details' cv.id %}" style="text-decoration: none; color: inherit;">
-                    <div class="card shadow-lg">
-                        <div class="card-header">
-                            <h5 class="card-title">{{ cv.first_name }} {{ cv.last_name }}</h5>
-                        </div>
-                        <div class="card-body">
-                            <p><strong>Skills:</strong> {{ cv.skills }}</p>
-                        </div>
+<div class="container py-5">
+    <h1 class="mb-4 text-center text-primary">CV List</h1>
+    <div class="row">
+        {% for cv in cv_all_list %}
+            <div class="col-md-4 mb-4">
+                <a href="{% url 'cv_details' cv.id %}" style="text-decoration: none; color: inherit;">
+                <div class="card shadow-lg">
+                    <div class="card-header">
+                        <h5 class="card-title">{{ cv.first_name }} {{ cv.last_name }}</h5>
                     </div>
-                    </a>
+                    <div class="card-body">
+                        <p><strong>Skills:</strong> {{ cv.skills }}</p>
+                    </div>
                 </div>
-            {% endfor %}
-        </div>
+                </a>
+            </div>
+        {% endfor %}
     </div>
+</div>
 </body>
 </html>
