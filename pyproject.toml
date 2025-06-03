@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "vedteam"
+version = "0.1.0"
+description = ""
+authors = ["ju <Seregina.j.s@gmail.com>"]
+packages = [
+  { include = "main" }
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.2.1"
+djangorestframework = "^3.16.0"
+xhtml2pdf = "^0.2.17"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

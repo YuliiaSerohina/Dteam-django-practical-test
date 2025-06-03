@@ -1,0 +1,26 @@
+[
+  {
+    "model": "main.cv",
+    "pk": 1,
+    "fields": {
+      "first_name": "Julia",
+      "last_name": "Serohina",
+      "skills": "Python, Django",
+      "projects": "CRMAplicant, MoneyControl",
+      "bio": "Dreamer",
+      "contacts": "Seregina.j.s@gmail.com"
+    }
+  },
+  {
+    "model": "main.cv",
+    "pk": 2,
+    "fields": {
+      "first_name": "Alex",
+      "last_name": "Valex",
+      "skills": "Python, Django, REST API, JavaScript",
+      "projects": "Instagram",
+      "bio": "Senior Python Developer",
+      "contacts": "super_Alex@gmail.com"
+    }
+  }
+]
